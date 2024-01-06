@@ -1,4 +1,4 @@
-package com.udilovit;
+package com.udilov.it;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,11 +12,11 @@ public class DemoqaTest {
 
     @BeforeAll
     static void configuration() {
-        Configuration.browserSize = ",640x480";
+        Configuration.browserSize = "640x480";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.timeout = 10000;
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     @Test
